@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="css/style.css">
 
     <title>Spotify</title>
@@ -11,38 +15,180 @@
 
 <body>
 
-    <!-- calc nav bar -->
-    <header>
-        <button id="upgrade">Effettua l'upgrade</button>
-    </header>
-
     <!-- overflow-y auto, flex containers -->
     <main>
+        <div class="clearfix">
+            <section class="sidebar fl">
 
-        <section>
+                <img src="./img/logo.svg" alt="logo">
+    
+                <!-- vertical nav two flex containers 100vh calc footer-->
+                <nav class="flex-container">
+    
+                    <div  class="flex-item">
+                        <ul>
+                            <li><i class="fas fa-home"></i><span class="white"> Home</span></li>
+                            <li><i class="fas fa-search"></i><span> Cerca</span></li>
+                            <li><i class="fab fa-deezer"></i><span> La tua libreria</span></li>
+                            <li id="playlist-text" class="white"><span><h4>Playlist</h4></span></li>
+                            <li><i id="big-plus-square" class="fas fa-plus-square"></i><span> Crea playlist</span></li>
+                            <li><span>Nome Playlist</span></li>
+                            <li><span>Nome Playlist</span></li>
+                            <li><span>Nome Playlist</span></li>
+                            <li><span>Nome Playlist</span></li>
+                            <li><span>Nome Playlist</span></li>
+                            <li><span>Nome Playlist</span></li>
+                            <li><span>Nome Playlist</span></li>
+                            <li><span>Nome Playlist</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex-item">
+                        <ul>
+                            <li class="border-bottom">Installa app</li>
+                            <li class="white"><h3>John Doe</h3></li>
+                        </ul>
+                    </div>
+                    
+                </nav>
+            </section>
+    
+            <section class="jumbo fl">
+    
+                <!-- calc nav bar -->
+                <section class="upgrade">
+                    <button id="upgrade">Effettua l'upgrade</button>
+                </section>
+    
+                 <!-- horizontal nav -->
+                <nav>
+                    <ul>
+                        <li>In evidenza</li>
+                        <li>Podcast</li>
+                        <li>Classifiche</li>
+                        <li>Generi e mood</li>
+                        <li>Nuove uscite</li>
+                        <li>scopri</li>
+                    </ul>
+                </nav>
+    
+                <!-- div with albums -->
+                <div class="row">
 
-            <!-- vertical nav two flex containers 100vh calc footer-->
-            <nav>
-                <div>
-                    <img src="./img/logo.svg" alt="logo">
+                    <h1></h1>
+
+                    <div class="flex-container">
+                    
+                        <div>
+                            <img src="" alt="">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <img src="" alt="">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <img src="" alt="">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <img src="" alt="">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <img src="" alt="">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <img src="" alt="">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-            </nav>
-        </section>
+                
+                <!-- div with releases-->
+                <div class="row">
 
-        <section>
+                    <h1></h1>
+                    <p></p>
 
-             <!-- horizontal nav -->
-            <nav>
+                    <div class="flex-container">
+                    
+                        <div>
+                            <img src="" alt="">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <img src="" alt="">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
 
-            </nav>
+                    </div>
+                </div>
 
-            <!-- div with albums -->
-            <div>
+                <!-- div with artists -->
+                <div class="row">
 
-            </div>
-        </section>
+                    <h1></h1>
+                    <p></p>
 
-    </main>
+                    <div class="flex-container">
+                    
+                        <div>
+                            <img src="" alt="">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+    
+                        <div>
+                            <img src="" alt="">
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+            </section>
+    
+        </main>
+        </div>
+       
 
     <!-- z-index 100 -->
     <footer>
