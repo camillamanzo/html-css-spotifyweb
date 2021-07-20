@@ -1,0 +1,29 @@
+/* GENERAL INFOS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 70px;
+    line-height: 70px;
+    vertical-align: middle;
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: right;
+}
+
+#upgrade{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .7em;
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 8px 30px;
+    margin-right: 5px;
+}
+
