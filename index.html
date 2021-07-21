@@ -23,13 +23,13 @@
                 <img src="./img/logo.svg" alt="logo">
     
                 <!-- vertical nav two flex containers 100vh calc footer-->
-                <nav class="flex-container">
+                <nav class="flex-container-column">
     
                     <div  class="flex-item">
                         <ul>
-                            <li><i class="fas fa-home"></i><span class="white"> Home</span></li>
-                            <li><i class="fas fa-search"></i><span> Cerca</span></li>
-                            <li><i class="fab fa-deezer"></i><span> La tua libreria</span></li>
+                            <li><img src="./img/home.svg" alt=""><span class="white"> Home</span></li>
+                            <li><img src="./img/search.svg" alt=""><span> Cerca</span></li>
+                            <li><img src="./img/libreria.svg" alt=""><span> La tua libreria</span></li>
                             <li id="playlist-text" class="white"><span><h4>Playlist</h4></span></li>
                             <li><i id="big-plus-square" class="fas fa-plus-square"></i><span> Crea playlist</span></li>
                             <li><span>Nome Playlist</span></li>
@@ -45,8 +45,8 @@
                     
                     <div class="flex-item">
                         <ul>
-                            <li class="border-bottom">Installa app</li>
-                            <li class="white"><h3>John Doe</h3></li>
+                            <li class="border-bottom"><img src="./img/download.svg" alt=""> Installa app</li>
+                            <li class="white"><img src="./img/profile.svg" alt=""><h3>John Doe</h3></li>
                         </ul>
                     </div>
                     
@@ -73,57 +73,60 @@
                 </nav>
     
                 <!-- div with albums -->
-                <div class="row">
+                <div class="first-row row">
 
-                    <h1></h1>
+                    <div class="info-text">
+                        <h1 class="white">Recently played</h1>
+                    </div>
 
-                    <div class="flex-container">
+                    <div class="flex-container-row">
                     
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3></h3>
-                                <p></p>
+                        <div class="flex-item">
+                            <img src="./img/metal_lifting.jpg" alt="">
+                            <div class="play"><i class="far fa-play-circle"></i></div>
+                            <div class="song-info-text">
+                                <h4 class="white"> Heavy Metal</h4>
+                                <p>Subtitle</p>
                             </div>
                         </div>
     
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3></h3>
-                                <p></p>
+                        <div class="flex-item">
+                            <img src="./img/stranger.jpeg" alt="">
+                            <div class="song-info-text">
+                                <h4 class="white">Stranger things ,vol. 1 (a Netflix Original Series Soundtrack)</h4>
+                                <p>Kyle Dixon & Michael Stein</p>
                             </div>
                         </div>
     
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3></h3>
-                                <p></p>
+                        <div class="flex-item">
+                            <img src="./img/aquietplace.jpeg" alt="">
+                            <div class="song-info-text">
+                                <h4 class="white">A quiet place</h4>
+                                <p>Subtitle</p>
                             </div>
                         </div>
                         
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3></h3>
-                                <p></p>
+                        <div class="flex-item">
+                            <img src="./img/split.jpeg" alt="">
+                            <div class="song-info-text">
+                                <h4 class="white">Split</h4>
+                                <p>Subtitle</p>
                             </div>
                         </div>
     
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3></h3>
-                                <p></p>
+                        <div class="flex-item">
+                            <img src="./img/cure.jpeg" alt="">
+                            <div class="song-info-text">
+                                <h4 class="white">A cure ofor wellness</h4>
+                                <p>Subtitle</p>
                             </div>
                         </div>
                         
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3></h3>
-                                <p></p>
+                        <div class="flex-item">
+                            <img src="./img/sinister.jpeg" alt="">
+                            <div class="song-info-text">
+                                <h4 class="white">Sinister</h4>
+                                <p>Subtitle</p>
                             </div>
                         </div>
 
@@ -133,24 +136,24 @@
                 <!-- div with releases-->
                 <div class="row">
 
-                    <h1></h1>
-                    <p></p>
-
-                    <div class="flex-container">
+                    <div class="info-text">
+                        <h1 class="white">Creato per john Doe</h1>
+                        <p>Pi&ugrave; ascolti, pi&ugrave; saranno i suggerimenti.</p>
+                    </div>
                     
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3></h3>
-                                <p></p>
+                    <div class="flex-container-row">
+                    
+                        <div class="flex-item">
+                            <img src="./img/radar.jpeg" alt="">
+                            <div class="song-info-text">
+                                <h4 class="white">Release Radar</h4>
                             </div>
                         </div>
     
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3></h3>
-                                <p></p>
+                        <div class="flex-item">
+                            <img src="./img/mixdaily.jpeg" alt="">
+                            <div class="song-info-text">
+                                <h4 class="white">Daily Mix 1</h4>
                             </div>
                         </div>
 
@@ -160,24 +163,24 @@
                 <!-- div with artists -->
                 <div class="row">
 
-                    <h1></h1>
-                    <p></p>
-
-                    <div class="flex-container">
+                    <div class="info-text">
+                        <h1 class="white">Artisti pi&ugrave; popolari</h1>
+                        <p>Pi&ugrave; ascolti, pi&ugrave; saranno i suggerimenti.</p>
+                    </div>
                     
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3></h3>
-                                <p></p>
+                    <div class="flex-container-row">
+                    
+                        <div class="circle flex-item">
+                            <img src="./img/youg.jpeg" alt="">
+                            <div class="song-info-text">
+                                <h4 class="white">Lana Del Rey</h4>
                             </div>
                         </div>
     
-                        <div>
-                            <img src="" alt="">
-                            <div>
-                                <h3></h3>
-                                <p></p>
+                        <div class="circle flex-item">
+                            <img src="./img/einaudi.jpeg" alt="">
+                            <div class="song-info-text">
+                                <h4 class="white">Ludovico Einaudi</h4>
                             </div>
                         </div>
 
@@ -192,7 +195,47 @@
 
     <!-- z-index 100 -->
     <footer>
+        <div class="flex-container">
 
+            <!-- container 25% width -->
+            <section class="footer-inline">
+                <div id="small-song-img">
+                    <img src="./img/sinister.jpeg" alt="">
+                </div>
+                <div class="footer-text">
+                    <h3 class="white">Sinister</h3>
+                    <p>Brano Nome</p>
+                </div>
+                <div>
+                    <i class="far fa-heart"></i>
+                    <i class="far fa-folder"></i>
+                </div>
+            </section>
+    
+            <!-- container 50% width -->
+            <section>
+                <div id="footer-middle-top">
+
+                </div>
+
+                <div id="footer-middle-bottom">
+                    <div>
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="far fa-play-circle"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-reply"></i>
+                    </div>
+                    <div class="white"></div>
+                    <div class="grey"></div>
+                </div>
+            </section>
+    
+            <!-- container 25% width -->
+            <section>
+    
+            </section>
+        </div>
     </footer>
 </body>
 </html>

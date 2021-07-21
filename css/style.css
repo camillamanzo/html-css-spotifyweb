@@ -18,6 +18,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    color: grey;
 }
 
             /*  SIDEBAR */
@@ -25,6 +26,7 @@ body{
 .sidebar{
     width: 200px;
     height: calc(100vh - 70px);
+    overflow-y: hidden;
 
     padding: 15px;
 
@@ -33,7 +35,7 @@ body{
     font-size: .7em;
 }
 
-.flex-container{
+.flex-container-column{
     display: flex;
     flex-direction: column;
 
@@ -47,7 +49,6 @@ body{
 
 .sidebar img{
     width: 70%;
-    height: 40px;
 }
 
 .sidebar ul li{
@@ -57,18 +58,34 @@ body{
     font-weight: bold;
 }
 
-.sidebar ul li i{
-    font-size: 20px;
-    margin-right: 5px;
+.sidebar ul li img{
+    width: 25px;
+    vertical-align: middle;
+
+}
+
+.white{
+    color: white;
+}
+
+.white h3{
+    display: inline-block;
 }
 
 nav ul .white{
-    color: white;
     margin-top: 15px;
 }
 
 li.border-bottom{
     border-bottom: 1px solid grey;
+}
+
+.white img{
+    padding: 2px 3px;
+    margin-right: 5px;
+    border-radius: 50%;
+
+    background-color: grey;
 }
 
 #playlist-text{
@@ -79,6 +96,14 @@ li.border-bottom{
     font-size: 30px;
 }
 
+/* hover */
+
+.sidebar ul li:hover{
+    color: white;
+    border-left: 2px solid yellowgreen;
+    cursor: pointer;
+}
+
             /* JUMBO */
 
 
@@ -87,6 +112,8 @@ li.border-bottom{
     right: 0;
     height: calc(100vh - 70px);
     width: calc(100% - 200px);
+
+    overflow-y: auto;
 
     background-color: rgb(37, 36, 46);
 }
@@ -116,6 +143,13 @@ section.upgrade{
     margin-right: 10px;
 }
 
+/* hover */
+
+#upgrade:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
 
 /* nav */
 
@@ -135,6 +169,55 @@ section.upgrade{
     padding: 10px;
 }
 
+/* flex row container */
+
+.flex-container-row{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+
+    /* flex-wrap: wrap; */
+}
+
+.flex-container-row .flex-item{
+    width: 180px;
+    height: 100%;
+    margin: 0 1% 10px;
+
+}
+
+.flex-container-row .flex-item img{
+    width: 100%;
+}
+
+.first-row .flex-container-row{
+    justify-content: space-evenly;
+}
+
+.circle.flex-item img{
+    position: relative;
+    border-radius: 50%;
+}
+
+.row>.info-text{
+    line-height: 2em;
+    margin-bottom: 1.5em;
+}
+
+.row>.info-text>p{
+    font-size: .7em;
+}
+
+.song-info-text{
+    font-size: .7em;
+    text-align: center;
+}
+
+/* hover */
+
+.row .flex-item:hover{
+    
+}
 
 
 
@@ -143,4 +226,23 @@ section.upgrade{
 footer{
     height: 70px;
     background-color: rgb(46, 45, 45);
+}
+
+#small-song-img{
+    width: 40px;
+}
+
+#small-song-img img{
+    width: 100%;
+}
+
+.footer-inline>div{
+    display: inline-block;
+    font-size: .7em;
+    margin: 15px 10px;
+    vertical-align: middle;
+}
+
+.footer-inline>div>i{
+    margin-right: 5px;
 }
