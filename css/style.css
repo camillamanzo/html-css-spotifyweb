@@ -169,6 +169,13 @@ section.upgrade{
     padding: 10px;
 }
 
+/* hover */
+
+.jumbo nav ul li:hover{
+    color: white;
+    border-bottom: 2px solid yellowgreen;
+}
+
 /* flex row container */
 
 .flex-container-row{
@@ -213,9 +220,21 @@ section.upgrade{
     text-align: center;
 }
 
+.position{
+    position: relative;
+}
+
+.paly i{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* hover */
 
-.row .flex-item:hover{
+.row .flex-item .play:hover{
     
 }
 
