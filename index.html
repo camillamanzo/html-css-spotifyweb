@@ -21,32 +21,37 @@
             <section class="sidebar fl">
 
                 <img src="./img/logo.svg" alt="logo">
+                <img id="hidden-logo" src="./img/logo-small.svg" alt="">
     
                 <!-- vertical nav two flex containers 100vh calc footer-->
                 <nav class="flex-container-column">
     
                     <div  class="flex-item">
                         <ul>
-                            <li><img src="./img/home.svg" alt=""><span class="white"> Home</span></li>
+                            <li id="green-border-left"><img src="./img/home.svg" alt=""><span class="white"> Home</span></li>
                             <li><img src="./img/search.svg" alt=""><span> Cerca</span></li>
                             <li><img src="./img/libreria.svg" alt=""><span> La tua libreria</span></li>
                             <li id="playlist-text" class="white"><span><h4>Playlist</h4></span></li>
-                            <li><i id="big-plus-square" class="fas fa-plus-square"></i><span> Crea playlist</span></li>
-                            <li><span>Nome Playlist</span></li>
-                            <li><span>Nome Playlist</span></li>
-                            <li><span>Nome Playlist</span></li>
-                            <li><span>Nome Playlist</span></li>
-                            <li><span>Nome Playlist</span></li>
-                            <li><span>Nome Playlist</span></li>
-                            <li><span>Nome Playlist</span></li>
-                            <li><span>Nome Playlist</span></li>
+                        
+                            <ul>
+                                <li><span><i id="big-plus-square" class="fas fa-plus-square"></i></span><span> Crea playlist</span></li>
+                                <li><span>Nome Playlist</span></li>
+                                <li><span>Nome Playlist</span></li>
+                                <li><span>Nome Playlist</span></li>
+                                <li><span>Nome Playlist</span></li>
+                                <li><span>Nome Playlist</span></li>
+                                <li><span>Nome Playlist</span></li>
+                                <li><span>Nome Playlist</span></li>
+                                <li><span>Nome Playlist</span></li>
+                            </ul>
+                            
                         </ul>
                     </div>
                     
                     <div class="flex-item">
                         <ul>
-                            <li class="border-bottom"><img src="./img/download.svg" alt=""> Installa app</li>
-                            <li class="white"><img src="./img/profile.svg" alt=""><h3>John Doe</h3></li>
+                            <li class="border-bottom"><img src="./img/download.svg" alt=""><span> Installa app</span></li>
+                            <li class="white"><img src="./img/profile.svg" alt=""><span><h3>John Doe</h3></span></li>
                         </ul>
                     </div>
                     
@@ -76,7 +81,7 @@
                  <!-- horizontal nav -->
                 <nav>
                     <ul>
-                        <li>In evidenza</li>
+                        <li id="green-border-bottom">In evidenza</li>
                         <li>Podcast</li>
                         <li>Classifiche</li>
                         <li>Generi e mood</li>

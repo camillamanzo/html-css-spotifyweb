@@ -52,6 +52,10 @@ body{
     width: 70%;
 }
 
+#hidden-logo{
+    display: none;
+}
+
 .sidebar ul li{
     list-style-type: none;
 
@@ -66,6 +70,10 @@ body{
 
 .white{
     color: white;
+}
+
+#green-border-left{
+    border-left: 2px solid yellowgreen;
 }
 
 .white h3{
@@ -104,7 +112,6 @@ li.border-bottom{
 
 .sidebar ul li:hover{
     color: white;
-    border-left: 2px solid yellowgreen;
     cursor: pointer;
 }
 
@@ -170,14 +177,17 @@ section.upgrade{
     font-size: .7em;
     font-weight: bold;
 
-    padding: 10px;
+    margin: 10px;
+}
+
+#green-border-bottom{
+    border-bottom: 2px solid yellowgreen;
 }
 
 /* hover */
 
 .jumbo nav ul li:hover{
     color: white;
-    border-bottom: 2px solid yellowgreen;
 }
 
 /* flex row container */
@@ -342,15 +352,20 @@ footer .footer-inline{
         width: 60px;
     }
 
-    .flex-container-column{
+    .flex-container-column li>span{
         display: none;
+    }
+
+    .flex-container-column li>img{
+        display: block;
     }
 
     .sidebar img{
         display: none;
     }
 
-    .sidebar .hidden-sidebar{
+    #hidden-logo{
         display: block;
     }
+   
 }
