@@ -41,6 +41,7 @@ body{
 
     justify-content: space-between;
     align-content: center;
+    overflow: hidden;
 }
 
 .sidebar nav{
@@ -61,7 +62,6 @@ body{
 .sidebar ul li img{
     width: 25px;
     vertical-align: middle;
-
 }
 
 .white{
@@ -86,6 +86,10 @@ li.border-bottom{
     border-radius: 50%;
 
     background-color: grey;
+}
+
+.sidebar .hidden-sidebar{
+    display: none;
 }
 
 #playlist-text{
@@ -182,8 +186,6 @@ section.upgrade{
     display: flex;
     flex-direction: row;
     flex: 1 1 0;
-
-    /* flex-wrap: wrap; */
 }
 
 .flex-container-row .flex-item{
@@ -195,10 +197,6 @@ section.upgrade{
 
 .flex-container-row .flex-item img{
     width: 100%;
-}
-
-.first-row .flex-container-row{
-    justify-content: space-evenly;
 }
 
 .circle.flex-item img{
@@ -229,7 +227,10 @@ section.upgrade{
     height: 100%;
     top: 0;
     left: 0;
-    /* background-color: black; */
+}
+
+.artists .position .play{
+    border-radius: 50%;
 }
 
 .play i{
@@ -248,15 +249,9 @@ section.upgrade{
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.row .flex-item .play:hover{
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .row .flex-item:hover .play i{
     display: block;
 }
-
-
 
             /* FOOTER */
 
@@ -282,4 +277,80 @@ footer{
 
 .footer-inline>div>i{
     margin-right: 5px;
+}
+
+footer .footer-inline{
+    width: 25%;
+}
+
+.footer-middle-top{
+    width: 50%;
+}
+
+.time-bar{
+    width: 17%;
+    height: 2px;
+    display: inline-block;
+    white-space: unset;
+}
+
+.grey.time-bar{
+    background-color: grey;
+}
+
+.white.time-bar{
+    background-color: white;
+}
+
+            /* MEDIA QUERY */
+
+@media screen and (max-width:768px){
+    .flex-container-row{
+        flex-wrap: wrap;
+    }
+
+    .flex-container-row .flex-item{
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:576px){
+    .flex-container-row{
+        flex-wrap: wrap;
+    }
+
+    .flex-container-row .flex-item{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:420px){
+    .flex-container-row{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .flex-container-row .flex-item{
+        width: 40%;
+    }
+
+    .jumbo{
+        width: calc(100% - 60px);
+    }
+
+    .sidebar{
+        width: 60px;
+    }
+
+    .flex-container-column{
+        display: none;
+    }
+
+    .sidebar img{
+        display: none;
+    }
+
+    .sidebar .hidden-sidebar{
+        display: block;
+    }
 }
